@@ -27,6 +27,11 @@ pass - shebu@12
 
 ![image](https://user-images.githubusercontent.com/67383098/229370986-9e2f7fd4-2b47-4ff1-b940-422855ffe672.png)
 
+Telnet verification from pc 
+
+![image](https://user-images.githubusercontent.com/67383098/229371107-2e529113-f0f6-4d98-9c88-622cf2baf17b.png)
+
+
  
  When given invalid password -
  
