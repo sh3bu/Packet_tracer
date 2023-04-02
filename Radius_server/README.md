@@ -1,6 +1,10 @@
 # Radius server
 
-#### Step:1- First assign hostname and ip address on Router R1.
+![image](https://user-images.githubusercontent.com/67383098/229372130-3f15b3d8-0177-4ea4-86ac-eda0ed821bf6.png)
+
+
+#### Step:1- First assign hostname and ip address on Router R1, default gateway ip on pc.
+
 
 #### Step2:Configure RADIUS SERVER(192.168.1.2)
 
