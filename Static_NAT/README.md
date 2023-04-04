@@ -39,3 +39,35 @@ Router(config)#int se 0/3/0
 Router(config-if)#ip address 1.0.0.2 255.255.255.0
 Router(config-if)#no shutdown
 ```
+
+## Configuring Static NAT
+
+#### Router 0
+```
+Router(config-if)#int fa 0/0
+Router(config-if)#ip nat inside
+Router(config-if)#exit
+
+Router(config)#
+
+Router(config)#int se 0/3/0
+Router(config-if)#ip nat outside
+```
+
+```
+Router(config)#ip nat inside source static 192.168.1.2 1.0.0.1
+Router(config)#ip route  0.0.0.0 0.0.0.0 serial 0/3/0
+
+Router(config)#ip nat inside source static 192.168.1.3 1.0.0.1
+Router(config)#ip route  0.0.0.0 0.0.0.0 serial 0/3/0
+```
+
+![image](https://user-images.githubusercontent.com/67383098/229853839-40fed6b1-fde0-43f6-b2f6-d3af610e3474.png)
+
+
+
+
+
+
+
+
