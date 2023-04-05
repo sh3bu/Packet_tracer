@@ -4,8 +4,9 @@
 
 **NOTE**
 
-For standard ACL , we can use - 0 to 99 as id
-For extended ACL , we can use - 1000 - 1099 as id
+For standard ACL , we can use - `0 to 99` as id
+
+For extended ACL , we can use - `1000 - 1099` as id
 
 #### Configure RIP routing 
 
@@ -16,6 +17,8 @@ ROUTER 1
 ROUTER 2
 
 ![image](https://user-images.githubusercontent.com/67383098/230167576-40be9842-6abb-4df0-b5b8-bba1e1c18d07.png)
+
+----------------------------------------------------
 
 ###  Standard ACL
 
@@ -54,3 +57,8 @@ Router(config-if)#exit
 ![image](https://user-images.githubusercontent.com/67383098/230175644-b2c41242-f972-4181-8b1f-a1889fc2ba2b.png)
 
 We can see PC 1 cant send packet past the router 0
+
+
+------------------------------------------------
+
+
