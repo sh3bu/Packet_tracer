@@ -91,11 +91,11 @@ IP NAT debugging is on
 
 R1#
 
-NAT: s=10.0.0.2->2.0.0.4, d=3.0.0.2 [12]
+NAT: s=192.168.1.2->1.0.0.4, d=1.0.0.2 [12]
 
 ```
 
-The first line shows the initial translation from 10.0.0.2 to 2.0.0.4, with a debug identifier of [12].
+The first line shows the initial translation from 192.168.1.2 to 1.0.0.2, with a debug identifier of [12].
 
 
 
