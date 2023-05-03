@@ -127,7 +127,17 @@ int main(int argc, char *argv[]) {
 
 ```
 
+![image](https://user-images.githubusercontent.com/67383098/235875044-a9b57087-58b8-4828-8f44-35417f8944e5.png)
 
+
+```
+# SSH into cbe22005server and print the name of the current user
+ssh -t cbe22005server "echo 'Current user: $(whoami)'; echo 'Server name: $HOSTNAME'"
+
+# Run the binary on cbe22005server with the input number
+ssh cbe22005server "/home/cbe22005server/prime 22005"
+
+```
 
 
 
