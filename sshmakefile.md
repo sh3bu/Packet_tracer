@@ -137,6 +137,7 @@ ssh -t cbe22005server "echo 'Current user: $(whoami)'; echo 'Server name: $HOSTN
 # Run the binary on cbe22005server with the input number
 ssh cbe22005server "/home/cbe22005server/prime 22005"
 
+ssh -t cbe22005server "echo 'Current user: $(whoami)'; echo 'Server name: $HOSTNAME'; /home/cbe22005server/prime 22005"
 ```
 
 
