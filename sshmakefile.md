@@ -150,7 +150,7 @@ int main(int argc, char *argv[]) {
 
 ![image](https://user-images.githubusercontent.com/67383098/235875044-a9b57087-58b8-4828-8f44-35417f8944e5.png)
 
-On running the `remoteshell.sh` script in `amrita22005client`, it does all the operations as mentioned in the questio. below is the screenshot. 
+On running the `remoteshell.sh` script in `amrita22005client`, it does all the operations as mentioned in the question. below is the screenshot. 
 
 ![image](https://user-images.githubusercontent.com/67383098/235880056-165fdea5-e4f8-4b5d-9684-400a2b926993.png)
 
