@@ -81,18 +81,7 @@ ssh cbe22005server "echo 'The current user is: \$(whoami)'; ./prime 22005"  # ss
 Makefile,
 
 ```
-CC = gcc
-CFLAGS = -c
-
-
-prime: prime.o
-	$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
-
-prime.o: prime.c
-	$(CC) $(CFLAGS)  $< -o $@
-
-clean:
-	$(RM) prime.o prime
+![Uploading image.png…]()
 ```
 
 prime
@@ -130,17 +119,10 @@ int main(int argc, char *argv[]) {
 ![image](https://user-images.githubusercontent.com/67383098/235875044-a9b57087-58b8-4828-8f44-35417f8944e5.png)
 
 
-```
-# SSH into cbe22005server and print the name of the current user
-ssh -t cbe22005server "echo 'Current user: $(whoami)'; echo 'Server name: $HOSTNAME'"
-
-# Run the binary on cbe22005server with the input number
-ssh cbe22005server "/home/cbe22005server/prime 22005"
-
-ssh -t cbe22005server "echo 'Current user: $(whoami)'; echo 'Server name: $HOSTNAME'; /home/cbe22005server/prime 22005"
-```
+![image](https://user-images.githubusercontent.com/67383098/235880056-165fdea5-e4f8-4b5d-9684-400a2b926993.png)
 
 
+![image](https://user-images.githubusercontent.com/67383098/235880198-354ddc5e-4077-4095-b084-e07a27e2301f.png)
 
 
 
