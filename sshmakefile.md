@@ -58,3 +58,86 @@ yourrollnumbercoimbatore using scp.
 d) Using ssh, log in to yourrollnumbercoimbatore and remotely execute the 
 commands for printing the name of current login user and executing the binary 
 file (Prime/Palindrome)
+
+
+```
+#!/bin/bash
+
+echo "The current user is: $(whoami)"
+
+cd /home/amrita22005client   # change to the directory that contains the Makefile
+make   # run the make command to build the project
+
+./prime 22005   # run the binary with the input 22005
+
+scp prime cbe22005server:~/   # copy the binary file 'prime' to the home directory of user 'cbe22005server'
+
+ssh cbe22005server "echo 'The current user is: \$(whoami)'; ./prime 22005"  # ssh into the user cbe22005server and run the command to print the current user and run the binary file 'prime' with the input 22005
+
+````
+
+
+
+Makefile,
+
+```
+CC = gcc
+CFLAGS = -c
+
+
+prime: prime.o
+	$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
+
+prime.o: prime.c
+	$(CC) $(CFLAGS)  $< -o $@
+
+clean:
+	$(RM) prime.o prime
+```
+
+prime
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    int num, i, isPrime = 1;
+    if (argc != 2) {
+        printf("Usage: %s <number>\n", argv[0]);
+        return 1;
+    }
+    num = atoi(argv[1]);
+    if (num <= 1) {
+        printf("The number %d is not prime.\n", num);
+        return 0;
+    }
+    for (i = 2; i <= num / 2; ++i) {
+        if (num % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+    if (isPrime)
+        printf("The number %d is prime.\n", num);
+    else
+        printf("The number %d is not prime.\n", num);
+    return 0;
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
