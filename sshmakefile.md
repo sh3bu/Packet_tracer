@@ -1,10 +1,25 @@
 1) Login as a root user. 
-2) Create two users yourrollnumberamrita(client) and yourrollnumbercoimbatore(server) 
+
+![image](https://user-images.githubusercontent.com/67383098/235846557-b5e6c108-7e3a-4137-a9d8-84e7625227a2.png)
+
+
+3) Create two users yourrollnumberamrita(client) and yourrollnumbercoimbatore(server) 
 with passwords. 
+
+![image](https://user-images.githubusercontent.com/67383098/235847130-f17af453-5fdf-4fa0-82f0-6fc9c7766750.png)
+
+
 3) Login as yourrollnumberamrita. Use ssh to create the private and public ids at the 
 location /home/yourrollnumberamrita/.ssh 
+
+![image](https://user-images.githubusercontent.com/67383098/235847330-490cce8d-b91a-4798-803b-4aec9ea5d4d8.png)
+
+
 4) Then copy the public id file to the 
 /home/yourrollnumbercoimbatore/.ssh/authorized_keys 
+
+![image](https://user-images.githubusercontent.com/67383098/235847468-10564574-711c-4859-a2c9-93f73e1a1c01.png)
+
 5) Do the necessary steps if required (editing ssh config files and restarting the service, 
 providing permissions for .ssh and .ssh/ authorized_keys etc..) 
 6) Check are you able to login without a password from yourrollnumberamrita to 
