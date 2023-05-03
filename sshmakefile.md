@@ -14,18 +14,40 @@ location /home/yourrollnumberamrita/.ssh
 
 ![image](https://user-images.githubusercontent.com/67383098/235847330-490cce8d-b91a-4798-803b-4aec9ea5d4d8.png)
 
+![image](https://user-images.githubusercontent.com/67383098/235847468-10564574-711c-4859-a2c9-93f73e1a1c01.png)
+
 
 4) Then copy the public id file to the 
 /home/yourrollnumbercoimbatore/.ssh/authorized_keys 
 
-![image](https://user-images.githubusercontent.com/67383098/235847468-10564574-711c-4859-a2c9-93f73e1a1c01.png)
+![image](https://user-images.githubusercontent.com/67383098/235865538-92fc0657-64ca-4587-87df-2975da1feb3f.png)
+
 
 5) Do the necessary steps if required (editing ssh config files and restarting the service, 
 providing permissions for .ssh and .ssh/ authorized_keys etc..) 
+
+![image](https://user-images.githubusercontent.com/67383098/235865817-6f342318-d3ed-454e-9f4c-59469ad6ab11.png)
+
+![image](https://user-images.githubusercontent.com/67383098/235866192-dc707a69-b99c-4f97-8fad-493f2088934d.png)
+
+![image](https://user-images.githubusercontent.com/67383098/235866236-8c0ec0dc-87aa-4268-91d0-50d321028a06.png)
+
+![image](https://user-images.githubusercontent.com/67383098/235866333-3ba04ead-6efa-46b6-9e01-9a9ec8bfe7e9.png)
+
+
+
 6) Check are you able to login without a password from yourrollnumberamrita to 
 yourrollnumbercoimbatore using ssh 
+
+Now we can ssh into the server user without a password,
+
+![image](https://user-images.githubusercontent.com/67383098/235865706-d5366f71-eb6f-4d6e-bfe4-925a251b3222.png)
+
 7) Then switch user to yourrollnumberamrita. 
-8) Write a script remoteshell.sh which will do the following sub-tasks 
+
+![image](https://user-images.githubusercontent.com/67383098/235866692-0696cf4a-5ff9-4c49-89d1-00ce1710d90c.png)
+
+9) Write a script remoteshell.sh which will do the following sub-tasks 
 a) Printing the name of current login user 
 b) This step is done based on your roll number. Run a makefile that prints the 
 number is (Prime (odd roll number)/Palindrome (even roll number)) using a 
