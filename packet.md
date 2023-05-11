@@ -1,3 +1,9 @@
+## Name - B.Shebu
+## Dpt - CYS
+## Topic - Dynamic Routing
+
+
+
 1) Exactly replicate the given Figure by configuring the network using dynamic routing 
 with the provided Information. 
 
